@@ -69,7 +69,7 @@ func FromStr(s string) (id UUID, err error) {
 	return
 }
 
-// MustFromStr behaves similar to FromStr except that it'll panic instead of
+// MustFromStr behaves similarly to FromStr except that it'll panic instead of
 // returning an error.
 func MustFromStr(s string) UUID {
 	id, err := FromStr(s)
