@@ -88,6 +88,7 @@ func randBytes(x []byte) {
 	if n != length || err != nil {
 		if !seeded {
 			mrand.Seed(time.Now().UnixNano())
+			seeded = true
 		}
 
 		for length > 0 {
